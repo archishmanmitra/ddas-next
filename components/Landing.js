@@ -34,7 +34,7 @@ export default function Landing() {
             <div className="md:w-1/2 p-8 md:p-12">
               <div className="relative">
                 <Image
-                  src="/placeholder.svg?height=400&width=600"
+                  src="/images/logo.png"
                   width={600}
                   height={400}
                   alt="Data Download Duplication Alert System"
