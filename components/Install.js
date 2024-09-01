@@ -2,7 +2,7 @@ import { Download, FolderOpen, Settings, ToggleRight, Upload } from "lucide-reac
 
 export default function Install() {
   return (
-    <div className="w-full max-w-3xl mx-auto bg-white text-black shadow-lg rounded-lg overflow-hidden">
+    <div className="w-full max-w-4xl mx-auto bg-white text-black shadow-lg rounded-lg overflow-hidden mt-10">
       <div className="p-6">
         <h2 className="text-2xl font-bold mb-4">Install Chrome Extension</h2>
         <ol className="space-y-4">
