@@ -1,17 +1,19 @@
-import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
-import Image from "next/image";
-import Link from "next/link";
-
+import Nav from "@/components/Nav";
+import Landing from "@/components/Landing";
+import Install from "@/components/Install";
+import Features from "@/components/Features";
+import Footer from "@/components/Footer";
 export default function Home() {
   return (
-    <div>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
-      <SignedOut>
-        <Link href={"/sign-in"}>Sign In</Link>
-      </SignedOut>
-      <h1>Hello</h1>
-    </div>
+    
+    <main className="flex flex-col min-h-screen w-full">
+     <Nav/>
+      <Landing/>
+      <Features/>
+      <Install/>
+      <Footer/>
+     
+    </main>
+    
   );
 }
