@@ -12,7 +12,7 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en" className="w-full p-5">
-        <body className='flex justify-center items-center '>
+        <body className='flex justify-center items-center bg-customColour'>
           {children}
         </body>
       </html>
