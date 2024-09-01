@@ -2,16 +2,15 @@ import React from 'react'
 import Link from "next/link"
 export default function Footer() {
   return (
-      <footer className="mt-10 py-12 w-full">
+      <footer className="mt-10 py-8 pl-5 w-full">
         <div className="container max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           <div className="space-y-4">
             <Link href="#" className="flex items-center gap-2" prefetch={false}>
-              <MountainIcon className="h-6 w-6" />
+              
               <span className="text-lg font-semibold">DDAS Inc</span>
             </Link>
             <p className="text-muted-foreground">
-              DDAS Inc is a leading provider of innovative web solutions. We help businesses of all sizes build and scale
-              their online presence.
+              DDAS is a dataset management system that prevents duplicate data downloads, optimizes resource usage and enhances database management.
             </p>
             <div className="flex items-center gap-2">
               <Link href="#" className="text-muted-foreground hover:underline" prefetch={false}>
@@ -30,14 +29,14 @@ export default function Footer() {
           </div>
           <nav className="grid gap-2">
             <h4 className="text-lg font-semibold">Quick Links</h4>
-            <Link href="#" className="text-muted-foreground hover:underline" prefetch={false}>
-              Installation
-            </Link>
-            <Link href="#" className="text-muted-foreground hover:underline" prefetch={false}>
+            <Link href="#landing" className="text-muted-foreground hover:underline" prefetch={false}>
               Home
             </Link>
-            <Link href="#" className="text-muted-foreground hover:underline" prefetch={false}>
+            <Link href="#features" className="text-muted-foreground hover:underline" prefetch={false}>
               Features
+            </Link>
+            <Link href="#install" className="text-muted-foreground hover:underline" prefetch={false}>
+              Installation
             </Link>
           </nav>
           <div className="space-y-2">
@@ -52,12 +51,12 @@ export default function Footer() {
               <div className="flex items-center gap-2">
                 <PhoneIcon className="h-4 w-4 text-muted-foreground" />
                 <a href="#" className="text-muted-foreground hover:underline">
-                  +1 (234) 567-890
+                  +91 9836473444
                 </a>
               </div>
               <div className="flex items-center gap-2">
                 <MapPinIcon className="h-4 w-4 text-muted-foreground" />
-                <span className="text-muted-foreground">123 Main St, Anytown USA</span>
+                <span className="text-muted-foreground">Kolkata, India</span>
               </div>
             </div>
           </div>
@@ -177,25 +176,6 @@ export default function Footer() {
     )
   }
   
-  
-  function MountainIcon(props) {
-    return (
-      <svg
-        {...props}
-        xmlns="http://www.w3.org/2000/svg"
-        width="24"
-        height="24"
-        viewBox="0 0 24 24"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="2"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      >
-        <path d="m8 3 4 8 5-5 5 15H2L8 3z" />
-      </svg>
-    )
-  }
   
   
   function PhoneIcon(props) {

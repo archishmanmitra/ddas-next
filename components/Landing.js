@@ -5,15 +5,10 @@ import { ArrowRight, Shield, Zap } from 'lucide-react'
 
 export default function Landing() {
   return (
-    <div className="flex flex-col min-h-screen bg-gradient-to-br from-gray-0 to-gray-50 text-black">
-      <header className="py-6">
-        <div className="container mx-auto px-4">
-          <h1 className="text-3xl font-bold">Data Download Duplication Alert System</h1>
-        </div>
-      </header>
+    <div id='landing' className="flex flex-col min-h-screen bg-gradient-to-br from-gray-0 to-gray-50 text-black ">
 
-      <main className="flex-grow container mx-auto px-4 py-12">
-        <div className="bg-white rounded-2xl shadow-2xl overflow-hidden">
+      <main className="flex-grow container mx-auto px-4  py-12">
+        <div  className="bg-white rounded-2xl shadow-2xl py-12 overflow-hidden">
           <div className="flex flex-col md:flex-row items-center">
             <div className="md:w-1/2 p-8 md:p-12">
               <h2 className="text-4xl md:text-5xl font-extrabold mb-6 leading-tight">
@@ -34,7 +29,7 @@ export default function Landing() {
             <div className="md:w-1/2 p-8 md:p-12">
               <div className="relative">
                 <Image
-                  src="/images/logo.png"
+                  src="/images/main.png"
                   width={600}
                   height={400}
                   alt="Data Download Duplication Alert System"

@@ -1,12 +1,15 @@
 'use client'
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
+
 import Image from "next/image";
 import Link from "next/link";
 import logo from '@/public/images/logo.png'
 
 export default function Nav() {
+    
+
   return (
-    <div className=" rounded-xl px-4 w-full py-3 flex justify-between items-center ">
+    <div className="backdrop-blur-lg bg-[#f2f4f363] z-50 top-0 sticky rounded-xl px-4 w-full py-3 flex justify-between items-center rgb ">
         <div >
             <Link href='/' className="flex justify-between items-center">
                 <Image 
@@ -15,17 +18,17 @@ export default function Nav() {
                     width={50}
                     height={50}
                     className="rounded-full"/>
-            <h1 className="font-medium text-2xl pt-2 pl-3">DDAS</h1>
+            <h1 className="font-medium text-2xl pt-1 pl-3">DDAS</h1>
             </Link>
         </div>
         <div className="ml-10 flex justify-between gap-5 items-baseline space-x-4">
-            <Link href="/" className=" hover:text-[#3b82f6] px-5 py-2 rounded-md text-lg font-medium">
+            <Link href="/#landing" className=" hover:text-muted-foreground px-5 py-2 rounded-md text-lg font-medium">
                 Home
             </Link>
-            <Link href="/about" className=" hover:text-[#3b82f6] px-5 py-2 rounded-md text-lg font-medium">
+            <Link href="/#features" className=" hover:text-muted-foreground px-5 py-2 rounded-md text-lg font-medium">
                 Features
             </Link>
-            <Link href="/services" className=" hover:text-[#3b82f6] px-5 py-2 rounded-md text-lg font-medium">
+            <Link href="/#install" className=" hover:text-muted-foreground px-5 py-2 rounded-md text-lg font-medium">
                 Install
             </Link>
             
@@ -35,8 +38,8 @@ export default function Nav() {
             <UserButton />
             </SignedIn>
             <SignedOut>
-            <button className=" flex justify-between items-center px-4 py-1 rounded-md border-black border ">
-            <Link href={"/sign-in"} className="pt-1">Sign In</Link>
+            <button className=" flex justify-between items-center px-4 py-1.5 rounded-md border-black border-2 font-medium hover:scale-105 transition-all duration-300  ">
+            <Link href={"/sign-in"} className="">Sign In</Link>
 
             </button>
             </SignedOut>

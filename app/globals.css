@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -6,7 +6,7 @@
 
 body{
   @apply bg-white text-black p-0 m-0 box-border  scroll-smooth;
-  font-family: "Anek Devanagari", sans-serif;
+  font-family: "Oswald", sans-serif;
 
 }
 

@@ -21,10 +21,10 @@ export default function Features() {
   ]
 
   return (
-    <section className="w-full py-12 bg-white">
-      <div className="container mx-auto px-4">
+    <section className="w-[96%] shadow-2xl py-12 rounded-2xl bg-white">
+      <div id='features' className="container mx-auto px-4">
         <h2 className="text-3xl font-bold text-center mb-12 text-black">Key Features</h2>
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid px-5 md:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div key={index} className="bg-gray-50 rounded-2xl shadow-xl p-8 transition-all duration-300 hover:shadow-2xl hover:scale-105">
               <div className="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center mb-6">
