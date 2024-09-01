@@ -7,7 +7,7 @@ export default function Home() {
   return (
     
     <main className="flex flex-col min-h-screen w-full">
-     <Nav/>
+      <Nav/>
       <Landing/>
       <Features/>
       <Install/>

@@ -11,8 +11,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
-      <html lang="en" className="w-full">
-        <body className='flex justify-center items-center m-6'>
+      <html lang="en" className="w-full p-5">
+        <body className='flex justify-center items-center '>
           {children}
         </body>
       </html>

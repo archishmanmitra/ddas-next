@@ -2,15 +2,15 @@
 import { SignedIn, SignedOut, UserButton } from "@clerk/nextjs";
 import Image from "next/image";
 import Link from "next/link";
-import logooo from '@/public/images/logooo.jpg'
+import logo from '@/public/images/logo.png'
 
 export default function Nav() {
   return (
-    <div className="w-full pb-4 flex justify-between items-center ">
+    <div className=" rounded-xl px-4 w-full py-3 flex justify-between items-center ">
         <div >
             <Link href='/' className="flex justify-between items-center">
                 <Image 
-                    src={logooo} 
+                    src={logo} 
                     alt="logo"
                     width={50}
                     height={50}
@@ -19,13 +19,13 @@ export default function Nav() {
             </Link>
         </div>
         <div className="ml-10 flex justify-between gap-5 items-baseline space-x-4">
-            <Link href="/" className=" hover:text-blue-950 px-5 py-2 rounded-md text-lg font-medium">
+            <Link href="/" className=" hover:text-[#3b82f6] px-5 py-2 rounded-md text-lg font-medium">
                 Home
             </Link>
-            <Link href="/about" className=" hover:text-blue-950 px-5 py-2 rounded-md text-lg font-medium">
+            <Link href="/about" className=" hover:text-[#3b82f6] px-5 py-2 rounded-md text-lg font-medium">
                 Features
             </Link>
-            <Link href="/services" className=" hover:text-blue-950 px-5 py-2 rounded-md text-lg font-medium">
+            <Link href="/services" className=" hover:text-[#3b82f6] px-5 py-2 rounded-md text-lg font-medium">
                 Install
             </Link>
             
@@ -35,7 +35,7 @@ export default function Nav() {
             <UserButton />
             </SignedIn>
             <SignedOut>
-            <button className=" flex justify-between items-center px-4 py-1 rounded-md border-white border ">
+            <button className=" flex justify-between items-center px-4 py-1 rounded-md border-black border ">
             <Link href={"/sign-in"} className="pt-1">Sign In</Link>
 
             </button>

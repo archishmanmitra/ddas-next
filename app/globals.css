@@ -5,7 +5,7 @@
 @tailwind utilities;
 
 body{
-  @apply bg-black text-white p-0 m-0 box-border  scroll-smooth;
+  @apply bg-white text-black p-0 m-0 box-border  scroll-smooth;
   font-family: "Anek Devanagari", sans-serif;
 
 }
