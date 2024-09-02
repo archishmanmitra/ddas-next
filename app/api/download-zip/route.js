@@ -17,13 +17,13 @@ export async function GET() {
     headers.set('Content-Type', 'application/zip')
 
     // Return the file as the response
-    return new NextResponse(fileBuffer, {
+    return NextResponse.json(fileBuffer, {
       status: 200,
       statusText: 'OK',
       headers: headers,
     })
   } catch (error) {
     console.error('Error serving ZIP file:', error)
-    return new NextResponse('Error serving file', { status: 500 })
+    return NextResponse.json('Error serving file', { status: 500 })
   }
 }

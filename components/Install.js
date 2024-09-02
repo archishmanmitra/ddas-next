@@ -36,7 +36,7 @@ export default function Install() {
             <div>
               <h3 className="font-semibold">Download the ZIP file</h3>
               
-              <button onClick={handleDownload} disabled={isLoading} className="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-zinc-800 transition-colors">
+              <button onClick={handleDownload} disabled={isLoading} className="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-[#4b4a4a] transition-colors">
               {isLoading ? 'Downloading...' : 'Download ZIP'}
               </button>
               
