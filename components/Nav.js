@@ -21,7 +21,7 @@ export default function Nav() {
             <h1 className="font-medium text-2xl pt-1 pl-3">DDAS</h1>
             </Link>
         </div>
-        <div className="ml-10 flex hidden md:flex justify-between gap-5 items-baseline space-x-4">
+        <div className="ml-10  hidden md:flex justify-between gap-5 items-baseline space-x-4">
             <Link href="/#landing" className=" hover:text-muted-foreground px-5 py-2 rounded-md text-lg font-medium">
                 Home
             </Link>

@@ -57,7 +57,7 @@ export default function Install() {
             <Upload className="w-6 h-6 flex-shrink-0 mt-1" />
             <div>
               <h3 className="font-semibold">Load unpacked extension</h3>
-              <p>Click on the "Load unpacked" button that appears after enabling Developer Mode.</p>
+              <p>Click on the &quot;Load unpacked&quot; button that appears after enabling Developer Mode.</p>
             </div>
           </li>
           <li className="flex items-start space-x-4">
