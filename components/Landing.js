@@ -20,7 +20,7 @@ export default function Landing() {
               Alert, Avert, Optimize: Your Data Guardian is Here.
               </p>
               <Link 
-                href="/signup" 
+                href="/#install" 
                 className="inline-flex items-center px-8 py-4 rounded-full font-semibold text-white bg-black hover:bg-gray-800 transition-all duration-300 transform hover:scale-105 shadow-lg"
               >
                 Get Started <ArrowRight className="ml-2" />
