@@ -1,29 +1,16 @@
 'use client'
 import { useState } from "react"
 import { Download, FolderOpen, Settings, ToggleRight, Upload } from "lucide-react"
-
+import Link from "next/link"
 export default function Install() {
 
   const [isLoading, setIsLoading] = useState(false)
 
   const handleDownload = async () => {
     setIsLoading(true)
-    try {
-      const response = await fetch('app/api/download-zip/route.js') 
-      const blob = await response.blob()
-      const url = window.URL.createObjectURL(blob)
-      const a = document.createElement('a')
-      a.style.display = 'none'
-      a.href = url
-      a.download = 'DDAS.zip' 
-      document.body.appendChild(a)
-      a.click()
-      window.URL.revokeObjectURL(url)
-    } catch (error) {
-      console.error('Download failed:', error)
-    } finally {
+    setInterval(() => {
       setIsLoading(false)
-    }
+    }, 690); 
   }
 
   return (
@@ -35,10 +22,12 @@ export default function Install() {
             <Download className="w-6 h-6 flex-shrink-0 mt-1" />
             <div>
               <h3 className="font-semibold">Download the ZIP file</h3>
-              
+              <Link href="/zip/DDAS.zip" passHref>
               <button onClick={handleDownload} disabled={isLoading} className="mt-2 px-4 py-2 bg-black text-white rounded hover:bg-[#4b4a4a] transition-colors">
               {isLoading ? 'Downloading...' : 'Download ZIP'}
               </button>
+              </Link>
+              
               
               
             </div>
