@@ -21,7 +21,7 @@ export default function Nav() {
             <h1 className="font-medium text-2xl pt-1 pl-3">DDAS</h1>
             </Link>
         </div>
-        <div className="ml-10 flex justify-between gap-5 items-baseline space-x-4">
+        <div className="ml-10 flex hidden md:flex justify-between gap-5 items-baseline space-x-4">
             <Link href="/#landing" className=" hover:text-muted-foreground px-5 py-2 rounded-md text-lg font-medium">
                 Home
             </Link>
@@ -45,7 +45,25 @@ export default function Nav() {
             </SignedOut>
             
         </div>
-       
+        <div className="md:hidden flex items-center">
+        <button className="text-gray-700 focus:outline-none">
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16m-7 6h7"
+            ></path>
+          </svg>
+        </button>
+      </div>
+
     </div>
   )
 }
