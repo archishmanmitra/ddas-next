@@ -3,7 +3,7 @@ import Link from "next/link"
 export default function Footer() {
   return (
       <footer className="mt-10 py-8 pl-5 w-full">
-        <div className="container max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="container max-w-7xl grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <Link href="#" className="flex items-center gap-2" prefetch={false}>
               
@@ -58,6 +58,34 @@ export default function Footer() {
                 <MapPinIcon className="h-4 w-4 text-muted-foreground" />
                 <span className="text-muted-foreground">Kolkata, India</span>
               </div>
+            </div>
+          </div>
+          <div className="space-y-2">
+            <h4 className="text-lg font-semibold">Dev & Design</h4>
+            <div className="flex flex-col gap-1">
+              <div className="flex items-center gap-2">
+                
+                <a href="https://github.com/archishmanmitra" target='_blank'
+                className="text-muted-foreground hover:underline">
+                  Archishman Mitra
+                </a>
+              </div>
+              <div className="flex items-center gap-2">                
+                <a href="https://github.com/Tennobis" target='_blank' className="text-muted-foreground hover:underline">
+                  Tanveer Hossain
+                </a>
+              </div>
+              <div className="flex items-center gap-2"> 
+                <a href="https://twitter.com/BroskiWoski69" target='_blank' className="text-muted-foreground hover:underline">
+                  Prithweesh Banerjee
+                </a>
+              </div>
+              <div className="flex items-center gap-2">
+                <a href="https://www.instagram.com/_._mriganka_debnath_._" target='_blank' className="text-muted-foreground hover:underline">
+                Mriganka Debnath
+                </a>
+              </div>
+              
             </div>
           </div>
         </div>
